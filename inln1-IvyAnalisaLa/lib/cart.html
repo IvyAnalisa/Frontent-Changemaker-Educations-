@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <title>Cart</title>
+</head>
+<body>
+    
+				
+        <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="FashionWeb.html">
+                                <img src="image/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <input type="text" placeholder="Search product...">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <a href="wishlist.html" class="btn wishlist">
+                                <i class="fa fa-heart"></i>
+                                <span>(0)</span>
+                            </a>
+                            <a href="cart.html" class="btn cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>(0)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End -->    
+
+        <!-- Nav Bar start-->
+        <div class="topnav" id="myTopnav">
+            <a href="FashionWeb.html" class="active">Home</a>
+            <a href="newarrival.html">New Arrivals</a>
+            <a href="categories.html">Categories</a>
+            <a href="BestSelling.html">Best Selling</a>
+            <a href="sale.html">Sale</a>
+            <a href="campaign.html">Campaign</a> 
+            <a href="contact.html">Contact Us</a> 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script> 
+<!-- Nav Bar end-->
+                   
+              
+        
+        <!-- Cart Start -->
+        <div class="cart-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="cart-page-inner">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Total</th>
+                                            <th>Remove</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="align-middle">
+                                        <tr>
+                                            <td>
+                                                <div class="img">
+                                                    <a href="#"><img src="image/shirt.jpg" alt="Image"></a>
+                                                    <p>Shirt</p>
+                                                </div>
+                                            </td>
+                                            <td>100 SEK</td>
+                                            <td>
+                                                <div class="qty">
+                                                    <button class="btn-minus"><i class="fa fa-minus"></i></button>
+                                                    <input type="text" value="1">
+                                                    <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>100 SEK</td>
+                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="img">
+                                                    <a href="#"><img src="image/shoes.jpg" alt="Image"></a>
+                                                    <p>shoes</p>
+                                                </div>
+                                            </td>
+                                            <td>100 SEK</td>
+                                            <td>
+                                                <div class="qty">
+                                                    <button class="btn-minus"><i class="fa fa-minus"></i></button>
+                                                    <input type="text" value="1">
+                                                    <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>100 SEK</td>
+                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="img">
+                                                    <a href="#"><img src="image/yellowdress.jpg" alt="Image"></a>
+                                                    <p>Dress</p>
+                                                </div>
+                                            </td>
+                                            <td>100 SEK</td>
+                                            <td>
+                                                <div class="qty">
+                                                    <button class="btn-minus"><i class="fa fa-minus"></i></button>
+                                                    <input type="text" value="1">
+                                                    <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>100 SEK</td>
+                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="img">
+                                                    <a href="#"><img src="image/babyclothes.png" alt="Image"></a>
+                                                    <p>Baby clothes</p>
+                                                </div>
+                                            </td>
+                                            <td>100 SEK</td>
+                                            <td>
+                                                <div class="qty">
+                                                    <button class="btn-minus"><i class="fa fa-minus"></i></button>
+                                                    <input type="text" value="1">
+                                                    <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>100 SEK</td>
+                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="img">
+                                                    <a href="#"><img src="image/diorwatch.jpg" alt="Image"></a>
+                                                    <p>Watch</p>
+                                                </div>
+                                            </td>
+                                            <td>100 SEK</td>
+                                            <td>
+                                                <div class="qty">
+                                                    <button class="btn-minus"><i class="fa fa-minus"></i></button>
+                                                    <input type="text" value="1">
+                                                    <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>100 SEK</td>
+                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="cart-page-inner">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="coupon">
+                                        <input type="text" placeholder="Coupon Code">
+                                        <button>Apply Code</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="cart-summary">
+                                        <div class="cart-content">
+                                            <h1>Cart Summary</h1>
+                                            <p>Sub Total<span>500SEK</span></p>
+                                            <p>Shipping Cost<span>50 SEK</span></p>
+                                            <h2>Grand Total<span>550 SEk</span></h2>
+                                        </div>
+                                        <div class="cart-btn">
+                                            <button>Update Cart</button>
+                                            <button>Checkout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cart End --> 
+
+      <!-- Footer Start -->
+    <footer>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Contact us</h2>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>Storgatan 25A,21435 Malmö,Sweden</p>
+                                <p><i class="fa fa-envelope"></i>info@ivyfashion.com</p>
+                                <p><i class="fa fa-phone"></i>+468123455</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Follow Us</h2>
+                            <div class="contact-info">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+    
+                                <h2>Join our Newsletter</h2>
+                                 <form action="/action_page.php">
+                                 <label for="email">Enter your email:</label>
+                                 <input type="email" id="email" name="email">
+                                <input type="submit">
+                                </form> 
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Company Info</h2>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Purchase Info</h2>
+                            <ul>
+                                <li><a href="#">Payment Policy</a></li>
+                                <li><a href="#">Shipping Policy</a></li>
+                                <li><a href="#">Return Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </footer>
+    <div>
+        <button onclick="topFunction()" id="Btn" title="Go to top">Top</button>
+        
+            <script>
+            //Get the button
+            var button = document.getElementById("Btn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        </div>
+        <!-- Footer End -->
+         
+        
+        
+         <!-- JavaScript Libraries -->
+         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+         <script src="lib/easing/easing.min.js"></script>
+         <script src="lib/slick/slick.min.js"></script>
+        <!--Javascript file function-->
+         <script src="js/main.js"></script>
+    </body>
+    </html>
